@@ -1,13 +1,8 @@
 def triangle(a, b, c):
-    """
-    Funkcja sprawdza, czy z podanych boków, można
-    utworzyć trójkąt
-    :param a: bok trójkąta
-    :param b: bok trójkąta
-    :param c: bok trójkąta
-    :return: zwraca True, jeżeli można, False jeżeli nie można
-    """
-    # Determine the longest side - first element in list:
+    # The function returns True if with given sides length 'a', 'b', and 'c' 
+    # the triangle can be made and False otherwise
+    
+    # Determine the longest side - first element in the list:
     sides_table = sorted([a, b, c], key=None, reverse=True)
 
     # Check if the triangle can be made:
@@ -17,4 +12,4 @@ def triangle(a, b, c):
 
 
 if __name__ == '__main__':
-    triangle(22, 21, 20)
+    print(triangle(22, 21, 20))
