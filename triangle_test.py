@@ -2,10 +2,6 @@ import pytest
 from triangle import triangle
 
 
-def test_init():
-    assert triangle
-
-
 @pytest.mark.parametrize("a, b, c", (
         (3, 4, 5),
         (2, 3, 2),
